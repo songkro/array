@@ -5,9 +5,6 @@ function dataHandling(input){
     input.splice(4,0,'Pria')
     input.splice(5,1,"SMA Internasional Metro")
     console.log(input)
-}
-let input = ["0001", "Roman Alamsyah ", "Bandar Lampung", "21/05/1989", "Membaca"];
-dataHandling(input)
 
 let data = (input[3].split('/'))
 console.log(data)
@@ -49,16 +46,23 @@ switch(data[1]){
     case '12' :
         console.log(' Desember ');
         break;
+    }
 
-console.log
-        
-        
-        
-        
-        
+    data.sort((a, b) => b - a)
+    console.log(data)
 
-        
-        
-        
-        
+    console.log(data.join(' - '))
+    console.log(input[1].slice(0,15))
 }
+
+let input = ["0001", "Roman Alamsyah ", "Bandar Lampung", "21/05/1989", "Membaca"];
+dataHandling(input)
+
+        
+        
+        
+
+        
+        
+        
+        
